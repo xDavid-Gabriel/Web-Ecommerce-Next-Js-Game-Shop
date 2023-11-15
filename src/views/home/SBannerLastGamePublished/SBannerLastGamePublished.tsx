@@ -5,6 +5,7 @@ import { DateTime } from 'luxon'
 import Link from 'next/link'
 import { fn } from '../../../utils'
 import { Label } from '../../../components/ui'
+import { FaAccusoft } from 'react-icons/fa'
 
 interface Props {
   lastPubDate: IGames
@@ -27,6 +28,7 @@ export const SBannerLastGamePublished = ({ lastPubDate }: Props) => {
           height={620}
           alt={lastPubDate.attributes.title}
         />
+
         <div tw="bg-gray-900 h-[60px] absolute w-full bottom-[-1px] [clip-path: polygon(0 100%,100% 100%, 0 0)]" />
         <Link
           href={lastPubDate.attributes.slug}

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Game } from '../../../api'
 import { GridGames } from '../../../components/ui'
 import { IGames } from '../../../interfaces'
-import { data } from '../../../components/ui/BarTrust/attributes'
+
 const gameCtrl = new Game()
 
 interface Props {
